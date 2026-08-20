@@ -11,3 +11,5 @@ local_conf_header:
     INHERIT += "rm_work"
     INHERIT_DISTRO:remove = "create-spdx"
     TEMPLATECONF = ""
+    EXTRA_IMAGE_FEATURES += "debug-tweaks"
+    
