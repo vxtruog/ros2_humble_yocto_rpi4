@@ -1,8 +1,6 @@
 header:
   version: 14
   includes:
-    - layer/clang.yml
-    - layer/clang-revival.yml
     - layer/zenoh.yml
 
 local_conf_header:
