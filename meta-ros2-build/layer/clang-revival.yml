@@ -1,9 +1,0 @@
-header:
-  version: 14
-
-repos:
-  clang-revival:
-    url: "https://github.com/zboszor/meta-clang-revival"
-    branch: "scarthgap"
-    commit: "15bbb8a25648da1e591a596e7643d0a3c060e441"
-    path: "layers/meta-clang-revival"
