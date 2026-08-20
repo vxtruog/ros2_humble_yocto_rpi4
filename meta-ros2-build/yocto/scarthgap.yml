@@ -1,7 +1,5 @@
 header:
   version: 14
-  includes:
-    - layer/clang-revival.yml
 
 defaults:
   repos:
