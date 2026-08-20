@@ -4,6 +4,7 @@ header:
 repos:
   zenoh:
     url: "https://github.com/Jarsop/meta-zenoh.git"
+    commit: "0398092cdb34c689fef7e392fafefc5b07a110b4"
     path: "layers/meta-zenoh"
     layers:
       meta-zenoh:

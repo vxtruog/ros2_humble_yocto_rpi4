@@ -4,4 +4,6 @@ header:
 repos:
   lts-mixins:
     url: "https://git.yoctoproject.org/meta-lts-mixins"
+    branch: "scarthgap/rust"
+    commit: "9987a76095ee751864e55e418539f42b9c3b8a6b"
     path: "layers/meta-lts-mixins"
