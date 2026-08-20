@@ -1,0 +1,18 @@
+header:
+  version: 14
+
+distro: "ros2"
+
+repos:
+  ros:
+    url: "https://github.com/ros/meta-ros.git"
+    branch: "scarthgap"
+    commit: "336ec2aaeede7f6f2d7d305cde0426f8dbc14984"
+    path: "layers/meta-ros"
+    layers:
+      meta-ros-common:
+      meta-ros2:
+      meta-ros2-humble:
+
+target:
+  - ros-image-core

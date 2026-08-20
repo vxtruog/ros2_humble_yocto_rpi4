@@ -1,0 +1,12 @@
+header:
+  version: 14
+  includes:
+    - yocto/scarthgap.yml
+    - ros2/humble.yml
+    - machine/raspberrypi4-64.yml
+    - common.yml
+    - layer/lts-mixins.yml
+
+repos:
+  lts-mixins:
+    branch: "scarthgap/rust"
