@@ -31,3 +31,10 @@ kas build meta-ros/kas/oeros-scarthgap-humble-raspberrypi4-64.yml
 # nếu độ sâu depth chưa đủ để có nhánh commit phù hợp thì tăng thêm độ sâu dùng git fetch --depth=<độ_sâu_mong_muốn> <branch> <version>, sau đó git checkout vào mã commit phù hợp.
 # một điều chú ý là meta-ros (build) để dùng kas, còn meta-ros(scarthgap) mới có các tệp để thêm vào bblayers.conf nhé, ta phải git clone cả hai nhánh này.
 ```
+
+```
+kết quả có trong: ~/build/tmp-glibc/deploy/images/raspberrypi4-64/
+bunzip2 -f ros-image-core-humble-raspberrypi4-64.rootfs.wic.bz2
+sudo dd if=ros-image-core-humble-raspberrypi4-64.rootfs.wic \
+         of=/dev/sdX bs=4M conv=fdatasync status=progress         //X phải hợp lý với thư mục thẻ SD, dùng lsblk để check
+```
