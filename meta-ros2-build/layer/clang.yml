@@ -1,0 +1,13 @@
+header:
+  version: 14
+
+repos:
+  clang:
+    url: "https://github.com/kraj/meta-clang.git"
+    branch: "scarthgap"
+    commit: "15bbb8a25648da1e591a596e7643d0a3c060e441"
+    path: "layers/meta-clang"
+
+local_conf_header:
+  clang: |
+    PACKAGECONFIG:append:pn-clang = "  libomp"
