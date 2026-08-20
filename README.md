@@ -23,5 +23,11 @@ python3 -m venv venv
 source venv/bin/activate
 pip3 install kas
 
-git clone -b build https://github.com/ros/meta-ros
+git clone --depth=1 -b build https://github.com/ros/meta-ros
+kas build meta-ros/kas/oeros-scarthgap-humble-raspberrypi4-64.yml
+
+# lúc này có layer nào mà kas không build trực tiếp được thì git clone thủ công với --depth=, sao cho phù hợp với nhánh và commit mong muốn trong tệp .yml
+# để check commit dùng git rev-parse HEAD
+# nếu độ sâu depth chưa đủ để có nhánh commit phù hợp thì tăng thêm độ sâu dùng git fetch --depth=<độ_sâu_mong_muốn> <branch> <version>, sau đó git checkout vào mã commit phù hợp.
+# một điều chú ý là meta-ros (build) để dùng kas, còn meta-ros(scarthgap) mới có các tệp để thêm vào bblayers.conf nhé, ta phải git clone cả hai nhánh này.
 ```
